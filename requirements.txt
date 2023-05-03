@@ -5,4 +5,4 @@ prometheus-fastapi-instrumentator==5.7.0
 pydantic==1.6.2
 scikit-learn
 uvicorn==0.13.2
-joblibs
+joblibs==1.2.0
