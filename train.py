@@ -13,8 +13,8 @@ logger = logging.getLogger(__name__)
 
 def prepare_dataset(test_size=0.2, random_seed=1):
     dataset = pd.read_csv(
-        "C:\\Users\\user\\Documents\\js-fastapi-monitoring\\winequality-red.csv",
-        delimiter=";",
+        "winequality-red.csv",
+        delimiter=",",
     )
     dataset = dataset.rename(columns=lambda x: x.lower().replace(" ", "_"))
     train_df, test_df = train_test_split(dataset, test_size=test_size, random_state=random_seed)
